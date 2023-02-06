@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "793981887863",
+    "project_id": "the-pet-gazette",
+    "storage_bucket": "the-pet-gazette.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793981887863:android:1c20e794f0ddb9bb11ed72",
+        "android_client_info": {
+          "package_name": "com.thepetgazette"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "793981887863-c04mt68rcbhbtjc5gbdn8ct6ng4c310v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv7kXLgQo5KOcrDX4owW0OzQ6lofiNw9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "793981887863-c04mt68rcbhbtjc5gbdn8ct6ng4c310v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
