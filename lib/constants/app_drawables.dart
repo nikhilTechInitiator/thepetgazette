@@ -8,6 +8,9 @@ class AppDrawables {
   static const String dummyDownload = "app_assets/download.PNG";
 
   //icons
+  static const String person = "assets/person.svg";
+  static const String email = "assets/email.svg";
+  static const String password = "assets/password.svg";
   static const String aboutUs = "assets/about_us.svg";
   static const String advertise = "assets/advertise.svg";
   static const String contactUs = "assets/contact_us.svg";

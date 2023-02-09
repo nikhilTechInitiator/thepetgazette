@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:thepetgazette/presentation/screens/downloads/downloads.dart';
 import 'package:thepetgazette/presentation/screens/home.dart';
 
+import '../presentation/screens/authentication/login.dart';
 import '../presentation/screens/authentication/splash_screen.dart';
 
 class AppRouter {
@@ -12,7 +13,7 @@ class AppRouter {
       case '/':
         return MaterialPageRoute(builder: (_) => const SplashScreen());
       case '/login':
-        return MaterialPageRoute(builder: (_) => const SplashScreen());
+        return MaterialPageRoute(builder: (_) => const Login());
         case '/home':
         return MaterialPageRoute(builder: (_) =>  Home());
       case '/downloads':

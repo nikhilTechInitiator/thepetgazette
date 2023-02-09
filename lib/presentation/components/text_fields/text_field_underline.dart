@@ -67,7 +67,7 @@ class TextFieldUnderlined extends StatelessWidget {
           hintStyle: Theme.of(context)
               .textTheme
               .titleSmall!
-              .copyWith(fontWeight: FontWeight.w600),
+              .copyWith(fontWeight: FontWeight.normal),
           hintText: textEditingController.text.isEmpty
               ? label
               : textEditingController.text,
@@ -76,7 +76,7 @@ class TextFieldUnderlined extends StatelessWidget {
               horizontal: 12, vertical: errorBorderColor != null ? 4 : 8),
           border: UnderlineInputBorder(
             borderRadius: BorderRadius.circular(4),
-            borderSide: const BorderSide(color: Colors.black, width: 2),
+            borderSide: const BorderSide(color: Colors.black, width: 1),
           ),
           focusedBorder: UnderlineInputBorder(
               borderRadius: BorderRadius.circular(4),

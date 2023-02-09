@@ -8,6 +8,7 @@ import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:provider/provider.dart';
 import 'package:thepetgazette/constants/app_themes.dart';
 import 'package:thepetgazette/presentation/screens/authentication/authentication_provider.dart';
+import 'package:thepetgazette/presentation/screens/authentication/login.dart';
 import 'package:thepetgazette/presentation/screens/authentication/splash_screen.dart';
 import 'package:thepetgazette/router/app_router.dart';
 import 'package:thepetgazette/utils/firebase_local_noitification_utils.dart';
@@ -68,7 +69,7 @@ class _MyAppState extends State<MyApp> {
         theme: getTheme(),
         useInheritedMediaQuery: true,
         // home:  Home(),
-        home:  SplashScreen(),
+        home:  Login(),
       ),
     );
   }
