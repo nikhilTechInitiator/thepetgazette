@@ -41,7 +41,7 @@ class SocialLoginWidget extends StatelessWidget {
           padding: EdgeInsets.all(2),
           text: "Continue with Google",
           onPressed: () {
-            showLoader();
+            // showLoader();
             // AuthService().signInWithGoogle().then((result) {
             //   if (result != null) {
             //     print(result);
@@ -64,7 +64,7 @@ class SocialLoginWidget extends StatelessWidget {
           padding: EdgeInsets.all(8),
           text: "Continue with Facebook",
           onPressed: () {
-            showLoader();
+            // showLoader();
             // AuthService().signInWithFacebook().then((result) {
             //   if (result != null) {
             //     print(result);
@@ -90,7 +90,7 @@ class SocialLoginWidget extends StatelessWidget {
             padding:const  EdgeInsets.all(2),
             text: "Continue with Apple",
             onPressed: () {
-              showLoader();
+              // showLoader();
 
               print('apple message 0');
 
