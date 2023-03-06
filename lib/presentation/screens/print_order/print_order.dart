@@ -22,7 +22,7 @@ class PrintOrder extends StatelessWidget {
       appBar: appBarHome(),
       drawer: HomeDrawer(),
       body: SingleChildScrollView(
-        padding: AppStyles.layoutMargin,
+        padding: AppStyles.screenPadding,
 
         child: Column(
           children: [

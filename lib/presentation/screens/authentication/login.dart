@@ -35,7 +35,7 @@ class LoginState extends State<Login> {
     return Form(
       key: _formKey,
       child: Padding(
-        padding: AppStyles.layoutMargin,
+        padding: AppStyles.screenPadding,
         child: Center(
           heightFactor:1.3 ,
           child: Card(
@@ -44,7 +44,7 @@ class LoginState extends State<Login> {
             child: SingleChildScrollView(
               
               padding:
-                  AppStyles.layoutMargin.copyWith(top: AppStyles().paddingTop),
+                  AppStyles.screenPadding.copyWith(top: AppStyles().paddingTop),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 mainAxisAlignment: MainAxisAlignment.center,

@@ -23,7 +23,7 @@ class ArticleCategoryTile extends StatelessWidget {
           child: ListView.separated(
             itemCount: 2,
             physics:const NeverScrollableScrollPhysics(),
-            padding: AppStyles.layoutMargin,
+            padding: AppStyles.screenPadding,
             shrinkWrap: true,
             itemBuilder: (BuildContext context, int index) {
               return const ArticleTile();

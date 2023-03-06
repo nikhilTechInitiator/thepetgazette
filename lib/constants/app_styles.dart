@@ -32,7 +32,25 @@ class AppStyles {
   // var safeWidth = logicalWidth - paddingLeft - paddingRight;
   // var safeHeight = logicalHeight - paddingTop - paddingBottom;
 
-  static EdgeInsets layoutMargin = const EdgeInsets.all(16);
+
+  //PADDING
+  static const EdgeInsets extraSmallPadding =  EdgeInsets.all(4.0);
+  static const EdgeInsets smallPadding = EdgeInsets.all( 8.0);
+  static const EdgeInsets mediumPadding =  EdgeInsets.all(16.0);
+  static const EdgeInsets largePadding =  EdgeInsets.all(24.0);
+  static const EdgeInsets extraLargePadding =  EdgeInsets.all(32.0);
+
+  static const EdgeInsets screenPadding = EdgeInsets.all(16.0);
+  static const EdgeInsets horizontalPadding =  EdgeInsets.all(16.0);
+  static const EdgeInsets verticalPadding = EdgeInsets.all(8.0);
+  static const EdgeInsets cardPadding = EdgeInsets.all(12.0);
+  static const EdgeInsets listItemPadding = EdgeInsets.all(12.0);
+  static const EdgeInsets iconPadding = EdgeInsets.all(8.0);
+  static const EdgeInsets buttonPadding = EdgeInsets.all(8.0);
+  static const EdgeInsets inputPadding = EdgeInsets.all(16.0);
+  static const EdgeInsets appBarTitlePadding = EdgeInsets.all(16.0);
+  static const EdgeInsets sectionPadding =EdgeInsets.all( 16.0);
+  static const EdgeInsets dividerPadding = EdgeInsets.all(16.0);
 
   static SizedBox sizedBoxTiny = const SizedBox(
     height: 5,
@@ -195,7 +213,7 @@ class AppStyles {
   static BoxDecoration appBoxDecorationMedium8 = BoxDecoration(
     color: Theme.of(MyApp.navigatorKey.currentContext!).colorScheme.surface,
     borderRadius: BorderRadius.circular(8),
-    boxShadow: appDropShadow,
+    boxShadow: appDropSmall,
   );
   static BoxDecoration appBoxDecorationMedium16 = BoxDecoration(
     color: Theme.of(MyApp.navigatorKey.currentContext!).colorScheme.surface,

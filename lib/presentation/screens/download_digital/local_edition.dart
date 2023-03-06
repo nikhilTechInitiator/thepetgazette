@@ -15,7 +15,7 @@ class LocalEdition extends StatelessWidget {
     return Scaffold(
       appBar: appBarDefault('Local Edition'),
       body: Padding(
-        padding: AppStyles.layoutMargin,
+        padding: AppStyles.screenPadding,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [

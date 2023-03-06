@@ -23,7 +23,11 @@ class AppDrawables {
   static const String scanCode = "assets/scan_code.svg";
   static const String star = "assets/star.svg";
   static const String tpgTV =  "assets/tpg_tv.svg";
+  static const String facebook = "assets/facebook.svg";
+  static const String instagram = "assets/instagram.svg";
+  static const String youtube = "assets/youtube.svg";
   static const String dummySVG = "assets/star.svg";
+  static const String dummyPetProfileImage = "assets/instagram.svg";
 
 
 }

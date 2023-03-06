@@ -18,7 +18,7 @@ class DownloadDigital extends StatelessWidget {
       appBar: appBarHome(),
       drawer: HomeDrawer(),
       body: Padding(
-        padding: AppStyles.layoutMargin,
+        padding: AppStyles.screenPadding,
         child: Column(
           children: [
             Text(

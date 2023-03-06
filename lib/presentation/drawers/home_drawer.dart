@@ -5,11 +5,13 @@ import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:provider/provider.dart';
 import 'package:thepetgazette/constants/app_strings.dart';
 import 'package:thepetgazette/constants/app_styles.dart';
+import 'package:thepetgazette/presentation/screens/advertise_with_us/advertise_with_us.dart';
 import 'package:thepetgazette/presentation/screens/downloads/downloads.dart';
 
 import '../../constants/app_drawables.dart';
 import '../components/popup_and_loaders/custom_circular_progress_indicator.dart';
 import '../screens/authentication/authentication_provider.dart';
+import '../screens/top_ten_pets/top_ten_pets.dart';
 
 class HomeDrawer extends StatefulWidget {
   const HomeDrawer({Key? key}) : super(key: key);
@@ -97,6 +99,28 @@ class _HomeDrawerState extends State<HomeDrawer> {
 
           _listTile(
               iconLocation: AppDrawables.aboutUs,
+              name: 'Top Ten Dogs',
+              clickAction: () {
+                PersistentNavBarNavigator.pushNewScreen(
+                  context,
+                  screen:  const TopTenPets(petCategory: 'Dog',),
+                  withNavBar: false, // OPTIONAL VALUE. True by default.
+                  pageTransitionAnimation: PageTransitionAnimation.cupertino,
+                );
+              }),
+          _listTile(
+              iconLocation: AppDrawables.aboutUs,
+              name: 'Top Ten Cats',
+              clickAction: () {
+                PersistentNavBarNavigator.pushNewScreen(
+                  context,
+                  screen:  const TopTenPets(petCategory: 'Dog',),
+                  withNavBar: false, // OPTIONAL VALUE. True by default.
+                  pageTransitionAnimation: PageTransitionAnimation.cupertino,
+                );
+              }),
+          _listTile(
+              iconLocation: AppDrawables.aboutUs,
               name: 'About US',
               clickAction: () {}),
           _listTile(
@@ -110,7 +134,14 @@ class _HomeDrawerState extends State<HomeDrawer> {
           _listTile(
               iconLocation: AppDrawables.advertise,
               name: 'Advertise',
-              clickAction: () {}),
+              clickAction: () {
+                PersistentNavBarNavigator.pushNewScreen(
+                  context,
+                  screen:  AdvertiseWithUs(),
+                  withNavBar: false, // OPTIONAL VALUE. True by default.
+                  pageTransitionAnimation: PageTransitionAnimation.cupertino,
+                );
+              }),
           _listTile(
               iconLocation: AppDrawables.scanCode,
               name: 'QR Scan',

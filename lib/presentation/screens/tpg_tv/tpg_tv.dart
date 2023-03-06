@@ -26,7 +26,7 @@ class TPGTV extends StatelessWidget {
       appBar: appBarHome(),
       drawer: const HomeDrawer(),
       body: SingleChildScrollView(
-        padding: AppStyles.layoutMargin,
+        padding: AppStyles.screenPadding,
 
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,

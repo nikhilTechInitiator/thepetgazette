@@ -15,7 +15,7 @@ class NationalEdition extends StatelessWidget {
     return Scaffold(
       appBar: appBarDefault('National Edition'),
       body: Padding(
-        padding: AppStyles.layoutMargin,
+        padding: AppStyles.screenPadding,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [

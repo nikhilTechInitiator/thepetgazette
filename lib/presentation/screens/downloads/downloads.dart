@@ -11,7 +11,7 @@ class Downloads extends StatelessWidget {
     return Scaffold(
       appBar: appBarDefault('Downloads'),
       body: Padding(
-        padding: AppStyles.layoutMargin,
+        padding: AppStyles.screenPadding,
 
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
