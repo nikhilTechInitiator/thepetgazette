@@ -9,7 +9,9 @@ AppBar appBarDefault(String title) {
       title,
     ),
     centerTitle: true,
-    elevation: 2,
+    elevation: 1,
+    shadowColor: Colors.white,
+
   );
 }
 

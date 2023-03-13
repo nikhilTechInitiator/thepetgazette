@@ -26,6 +26,18 @@ class AppDrawables {
   static const String facebook = "assets/facebook.svg";
   static const String instagram = "assets/instagram.svg";
   static const String youtube = "assets/youtube.svg";
+  static const String cats = "assets/cat.svg";
+  static const String dogs = "assets/dog.svg";
+  static const String uniquePets = "assets/unique_pets.svg";
+
+
+  static const String fullPage = "assets/full_page.svg";
+  static const String halfPageVertical = "assets/half_page_vertical.svg";
+  static const String halfPageHorizontal = "assets/half_page_horizontal.svg";
+  static const String quarterPage = "assets/quarter_page.svg";
+  static const String somethingSmaller = "assets/something_smaller.svg";
+  static const String selectedTick = "assets/selected_tick.svg";
+
   static const String dummySVG = "assets/star.svg";
   static const String dummyPetProfileImage = "assets/instagram.svg";
 

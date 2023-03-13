@@ -1,8 +1,10 @@
 
 import 'package:flutter/material.dart';
+import 'package:thepetgazette/main.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../constants/app_strings.dart';
+import '../presentation/components/custom_screens/custom_webview.dart';
 import '../presentation/components/popup_and_loaders/show_snack_bar.dart';
 
 class UrlUtils {
@@ -18,6 +20,17 @@ class UrlUtils {
       showSnackBar(AppStrings.somethingWentWrong);
       debugPrint('url launch error $url');
       debugPrint(e.toString());
+    }
+  }
+  Future<void> launchInApp(String urlString,{ required String title}) async {
+    final Uri url = Uri.parse(urlString);
+
+    if(await canLaunchUrl(url)) {
+      Navigator.push(MyApp.navigatorKey.currentContext!,
+          MaterialPageRoute(builder: (_) => CustomWebview(url: urlString,title: title,)));
+    }else{
+      showSnackBar(AppStrings.somethingWentWrong);
+
     }
   }
 

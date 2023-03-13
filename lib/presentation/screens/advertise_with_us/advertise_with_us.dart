@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:thepetgazette/presentation/components/app_bars/app_bar_default.dart';
 import 'package:thepetgazette/presentation/components/text_fields/text_field_outlined.dart';
+import 'package:thepetgazette/presentation/screens/advertise_with_us/select_ad_size.dart';
 
 import '../../../constants/app_styles.dart';
-import '../../components/radio_switch/check_box_text.dart';
+import '../../components/custom_widgets/mutli_select_list.dart';
+import '../../components/pickers_and_viewers/media/file_picker_with_viewer.dart';
 
 class AdvertiseWithUs extends StatelessWidget {
   AdvertiseWithUs({Key? key}) : super(key: key);
@@ -79,16 +81,45 @@ class AdvertiseWithUs extends StatelessWidget {
                 maxLength: 10,
                 textInputType: TextInputType.text,
               ),
-              Text('Edition '),
-              Wrap(
-                direction: Axis.horizontal,
-                children: [
-                  CheckBoxText(text: 'New York City',isSelected: false, onChanged: (value){},),
-                  CheckBoxText(text: 'Fairfield City',isSelected: false, onChanged: (value){},),
-                  CheckBoxText(text: 'Westchester',isSelected: false, onChanged: (value){},),
-                  CheckBoxText(text: 'Long Island',isSelected: false, onChanged: (value){},),
+              AppStyles.sizedBoxTiny,
+              AppStyles.dividerMedium,
+              AppStyles.sizedBoxSmall,
+
+              const Text(
+                'Edition',
+                style: TextStyle(fontWeight: FontWeight.w600),
+              ),
+              // Wrap(
+              //   direction: Axis.horizontal,
+              //   children: [
+              //     CheckBoxText(text: 'New York City',isSelected: false, onChanged: (value){},),
+              //     CheckBoxText(text: 'Fairfield City',isSelected: false, onChanged: (value){},),
+              //     CheckBoxText(text: 'Westchester',isSelected: false, onChanged: (value){},),
+              //     CheckBoxText(text: 'Long Island',isSelected: false, onChanged: (value){},),
+              //   ],
+              // ),
+              AppStyles.sizedBoxTiny,
+
+              MultiSelectList(
+                multiSelectItemModels: [
+                  MultiSelectItemModel(text: 'New York City'),
+                  MultiSelectItemModel(text: 'Fairfield City'),
+                  MultiSelectItemModel(text: 'Westchester'),
+                  MultiSelectItemModel(text: 'Long Island'),
                 ],
               ),
+              AppStyles.sizedBoxMedium,
+              AppStyles.dividerMedium,
+              AppStyles.sizedBoxSmall,
+              const Text(
+                'Select Ad Size',
+                style: TextStyle(fontWeight: FontWeight.w600),
+              ),
+
+              AppStyles.sizedBoxTiny,
+              const SelectAdSize(),
+              AppStyles.sizedBoxMedium,
+              AppStyles.dividerMedium,
               AppStyles.sizedBoxLarge,
               TextFieldOutlined(
                 label: 'Subject',
@@ -116,11 +147,12 @@ class AdvertiseWithUs extends StatelessWidget {
                 maxLines: 1000,
                 textInputType: TextInputType.text,
               ),
+              const FilePickerWithViewerWidget(),
               AppStyles.sizedBoxExtraLarge,
               ElevatedButton(
                 onPressed: () {},
                 child: const Text(
-                  "Sign Up",
+                  "Submit",
                 ),
               ),
             ],

@@ -91,28 +91,28 @@ class TextFieldOutlined extends StatelessWidget {
               horizontal: 12, vertical: errorBorderColor != null ? 4 : 8),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4),
-            borderSide: BorderSide(color: Colors.black.withOpacity(.5)),
+            borderSide: BorderSide(color: Colors.grey.withOpacity(.5)),
           ),
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(4),
-              borderSide: BorderSide(color: Colors.black.withOpacity(.8))),
+              borderSide: BorderSide(color: Colors.grey.withOpacity(.8))),
           focusedErrorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4),
             borderSide: BorderSide(
-                color: errorBorderColor ?? Colors.black.withOpacity(.5)),
+                color: errorBorderColor ?? Colors.grey.withOpacity(.5)),
           ),
           errorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4),
             borderSide: BorderSide(
-                color: errorBorderColor ?? Colors.black.withOpacity(.5)),
+                color: errorBorderColor ?? Colors.grey.withOpacity(.5)),
           ),
           disabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4),
-            borderSide: BorderSide(color: Colors.black.withOpacity(.5)),
+            borderSide: BorderSide(color: Colors.grey.withOpacity(.5)),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4),
-            borderSide: BorderSide(color: Colors.black.withOpacity(.5)),
+            borderSide: BorderSide(color: Colors.grey.withOpacity(.5)),
           ),
         ),
       ),

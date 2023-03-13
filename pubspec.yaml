@@ -45,7 +45,7 @@ dependencies:
   shared_preferences: ^2.0.17
   cached_network_image: ^3.2.3
   shimmer: ^2.0.0
-  image_picker: ^0.8.6
+  image_picker: ^0.8.6+4
   image_cropper: ^3.0.1
   permission_handler: ^10.2.0
   url_launcher: ^6.1.8
@@ -63,6 +63,9 @@ dependencies:
   flutter_facebook_auth: ^4.4.1+1
   sign_in_with_apple: ^4.1.0
   flutter_signin_button: ^2.0.0
+  file_picker: ^5.2.5
+  device_info_plus: ^8.1.0
+  mime: ^1.0.4
 
 
 dev_dependencies:

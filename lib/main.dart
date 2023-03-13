@@ -7,6 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:provider/provider.dart';
 import 'package:thepetgazette/constants/app_themes.dart';
+import 'package:thepetgazette/presentation/screens/advertise_with_us/advertise_with_us.dart';
 import 'package:thepetgazette/presentation/screens/authentication/authentication_provider.dart';
 import 'package:thepetgazette/presentation/screens/authentication/login.dart';
 import 'package:thepetgazette/presentation/screens/authentication/splash_screen.dart';
@@ -68,8 +69,8 @@ class _MyAppState extends State<MyApp> {
         navigatorKey: MyApp.navigatorKey,
         theme: getTheme(),
         useInheritedMediaQuery: true,
-        // home:  Home(),
-        home:  Login(),
+        home:  Home(),
+        // home:  AdvertiseWithUs(),
       ),
     );
   }

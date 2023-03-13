@@ -7,11 +7,11 @@ import 'package:thepetgazette/constants/app_strings.dart';
 import 'package:thepetgazette/constants/app_styles.dart';
 import 'package:thepetgazette/presentation/screens/advertise_with_us/advertise_with_us.dart';
 import 'package:thepetgazette/presentation/screens/downloads/downloads.dart';
+import 'package:thepetgazette/utils/url_laucher.dart';
 
 import '../../constants/app_drawables.dart';
 import '../components/popup_and_loaders/custom_circular_progress_indicator.dart';
 import '../screens/authentication/authentication_provider.dart';
-import '../screens/top_ten_pets/top_ten_pets.dart';
 
 class HomeDrawer extends StatefulWidget {
   const HomeDrawer({Key? key}) : super(key: key);
@@ -98,26 +98,45 @@ class _HomeDrawerState extends State<HomeDrawer> {
           ),
 
           _listTile(
-              iconLocation: AppDrawables.aboutUs,
-              name: 'Top Ten Dogs',
+              iconLocation: AppDrawables.dogs,
+              name: 'Dogs',
               clickAction: () {
-                PersistentNavBarNavigator.pushNewScreen(
-                  context,
-                  screen:  const TopTenPets(petCategory: 'Dog',),
-                  withNavBar: false, // OPTIONAL VALUE. True by default.
-                  pageTransitionAnimation: PageTransitionAnimation.cupertino,
-                );
+                UrlUtils().launchInApp('https://thepetgazette.com/dogs',
+                    title: 'Dogs');
+                // PersistentNavBarNavigator.pushNewScreen(
+                //   context,
+                //   screen:  const TopTenPets(petCategory: 'Dog',),
+                //   withNavBar: false, // OPTIONAL VALUE. True by default.
+                //   pageTransitionAnimation: PageTransitionAnimation.cupertino,
+                // );
               }),
           _listTile(
-              iconLocation: AppDrawables.aboutUs,
-              name: 'Top Ten Cats',
+              iconLocation: AppDrawables.cats,
+              name: 'Cats',
               clickAction: () {
-                PersistentNavBarNavigator.pushNewScreen(
-                  context,
-                  screen:  const TopTenPets(petCategory: 'Dog',),
-                  withNavBar: false, // OPTIONAL VALUE. True by default.
-                  pageTransitionAnimation: PageTransitionAnimation.cupertino,
-                );
+                UrlUtils().launchInApp('https://thepetgazette.com/cats',
+                    title: 'Cats');
+
+                // PersistentNavBarNavigator.pushNewScreen(
+                //   context,
+                //   screen:  const TopTenPets(petCategory: 'Dog',),
+                //   withNavBar: false, // OPTIONAL VALUE. True by default.
+                //   pageTransitionAnimation: PageTransitionAnimation.cupertino,
+                // );
+              }),
+          _listTile(
+              iconLocation: AppDrawables.uniquePets,
+              name: 'Unique Pets',
+              clickAction: () {
+                UrlUtils().launchInApp('https://thepetgazette.com/unique-pets',
+                    title: 'Unique Pets');
+
+                // PersistentNavBarNavigator.pushNewScreen(
+                //   context,
+                //   screen:  const TopTenPets(petCategory: 'Unique Pets',),
+                //   withNavBar: false, // OPTIONAL VALUE. True by default.
+                //   pageTransitionAnimation: PageTransitionAnimation.cupertino,
+                // );
               }),
           _listTile(
               iconLocation: AppDrawables.aboutUs,
@@ -137,7 +156,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
               clickAction: () {
                 PersistentNavBarNavigator.pushNewScreen(
                   context,
-                  screen:  AdvertiseWithUs(),
+                  screen: AdvertiseWithUs(),
                   withNavBar: false, // OPTIONAL VALUE. True by default.
                   pageTransitionAnimation: PageTransitionAnimation.cupertino,
                 );
